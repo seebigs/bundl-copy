@@ -23,7 +23,7 @@ var options = {
 
 bundl(targets)
     .then(copy(options))
-    .all();
+    .go();
 ```
 
 ## Setting the destination path (required)
