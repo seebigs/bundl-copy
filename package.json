@@ -1,6 +1,6 @@
 {
   "name": "bundl-copy",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Copy matched src files into another directory",
   "main": "index.js",
   "scripts": {
