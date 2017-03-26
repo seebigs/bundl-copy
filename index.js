@@ -20,7 +20,7 @@ module.exports = function (options) {
     }
 
     options.dest = path.resolve(options.dest);
-    options.basedir = options.basedir || process.cwd();
+    options.basedir = options.basedir ? path.resolve(options.basedir) : process.cwd();
 
     function all (resources, srcFiles, done) {
         var bundl = this;
