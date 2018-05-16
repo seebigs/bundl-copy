@@ -21,7 +21,7 @@ describe('', function (expect, done) {
         }
     });
 
-    c.all({}, srcFiles, function () {
+    c.exec(srcFiles, function () {
         var destFile = utils.readFile(path.resolve('test/_out/_a1.js'));
         expect(destFile).toBe(srcFile);
         done();

@@ -22,7 +22,7 @@ module.exports = function (options) {
     options.dest = path.resolve(options.dest);
     options.basedir = options.basedir ? path.resolve(options.basedir) : process.cwd();
 
-    function all (resources, srcFiles, done) {
+    function copy (srcFiles, done) {
         var bundl = this;
         var copied = 0;
 
@@ -61,7 +61,9 @@ module.exports = function (options) {
     }
 
     return {
-        all: all
+        name: 'copy',
+        stage: 'src',
+        exec: copy,
     };
 
 };

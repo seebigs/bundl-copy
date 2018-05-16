@@ -2,7 +2,7 @@
 
 *Copy matched src files into another directory*
 
-*Runs with the amazing [Bundl](https://github.com/seebigs/bundl) build tool*
+*Runs with the amazing [Bundl](https://github.com/seebigs/bundl) build tool at the [src stage](https://github.com/seebigs/bundl/wiki/Build-Stages)*
 
 ## Install
 
@@ -13,7 +13,7 @@ $ npm install --save-dev bundl-copy
 ## Use
 
 ```js
-var bundl = require('bundl');
+var Bundl = require('bundl');
 var copy = require('bundl-copy');
 
 var options = {
@@ -21,8 +21,8 @@ var options = {
     flatten: true
 };
 
-bundl(targets)
-    .then(copy(options))
+new Bundl(targets)
+    .src(copy(options))
     .go();
 ```
 

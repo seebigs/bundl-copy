@@ -4,7 +4,7 @@
   "description": "Copy matched src files into another directory",
   "main": "index.js",
   "scripts": {
-    "test": "node test/automated"
+    "test": "node test"
   },
   "repository": {
     "type": "git",
@@ -16,7 +16,7 @@
     "url": "https://github.com/seebigs/bundl-copy/issues"
   },
   "devDependencies": {
-    "feather-test": "^1.2.0"
+    "feather-test": "^4.0.0"
   },
   "dependencies": {
     "seebigs-utils": "^1.4.0"
